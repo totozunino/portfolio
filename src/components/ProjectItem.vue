@@ -38,7 +38,7 @@ useIntersectionObserver(target, ([{ isIntersecting }], obvserver) => {
     <Transition :name="props.leftAnimation">
       <img
         v-show="targetIsVisible"
-        :src="'src/assets/images/' + props.img"
+        :src="props.img"
         alt="Avatar App"
         class="z-10 w-full transition-transform border rounded shadow-lg cursor-pointer sm:w-1/2 dark:border-stone-600 shadow-primary/25 hover:scale-105"
       />
@@ -59,7 +59,7 @@ useIntersectionObserver(target, ([{ isIntersecting }], obvserver) => {
             class="flex items-center p-3 py-1 my-1 text-sm h-fit rounded-3xl bg-primary/25"
             :key="tech.name"
           >
-            <img :src="'src/assets/images/' + tech.img" alt="Vue Logo" width="16" height="16" class="mr-1" />
+            <img :src="tech.img" alt="Vue Logo" width="16" height="16" class="mr-1" />
             <span>{{ tech.name }}</span>
           </li>
         </ul>

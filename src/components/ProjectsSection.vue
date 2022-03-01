@@ -1,5 +1,13 @@
 <script setup lang="ts">
 import ProjectItem from "@/components/ProjectItem.vue";
+import AvatarAppImg from "@/assets/images/avatar_app.png";
+import ChatAppImg from "@/assets/images/chat-app.png";
+import VueImg from "@/assets/images/vue-logo.png";
+import VuetifyImg from "@/assets/images/vuetify.svg";
+import TypescriptImg from "@/assets/images/typescript.png";
+import ReactImg from "@/assets/images/react-logo.svg";
+import TailwindImg from "@/assets/images/tailwindcss.svg";
+import FirebaseImg from "@/assets/images/firebase.png";
 
 const projects = [
   {
@@ -8,20 +16,20 @@ const projects = [
     technologies: [
       {
         name: "Vue.js",
-        img: "vue-logo.png",
+        img: VueImg,
       },
       {
         name: "Vuetify",
-        img: "vuetify.svg",
+        img: VuetifyImg,
       },
       {
         name: "Typescript",
-        img: "typescript.png",
+        img: TypescriptImg,
       },
     ],
     leftAnimation: "roll-in-left",
     rightAnimation: "fade",
-    img: "avatar_app.png",
+    img: AvatarAppImg,
   },
   {
     title: "Web Chat",
@@ -30,25 +38,25 @@ const projects = [
     technologies: [
       {
         name: "React.js",
-        img: "react-logo.svg",
+        img: ReactImg,
       },
       {
         name: "Tailwind",
-        img: "tailwindcss.svg",
+        img: TailwindImg,
       },
       {
         name: "Firebase",
-        img: "firebase.png",
+        img: FirebaseImg,
       },
       {
         name: "Typescript",
-        img: "typescript.png",
+        img: TypescriptImg,
       },
     ],
     rightAnimation: "fade",
     leftAnimation: "roll-in-left",
     ltr: false,
-    img: "chat-app.png",
+    img: ChatAppImg,
   },
   // {
   //   title: "Only Coders",

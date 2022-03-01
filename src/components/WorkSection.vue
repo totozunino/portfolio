@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import VairixImg from "@/assets/images/vairix.jpg";
+import BrokenRubikImg from "@/assets/images/brokenrubik.jpeg";
+import IntegraCCSImg from "@/assets/images/integraccs.svg";
 
 const selectedTab = ref(0);
 const tabs = [
@@ -11,7 +14,7 @@ const tabs = [
       "Built a React component library using Typescript, Tailwindcss, Storybook, Testing library and Github packages",
       "Working with agile methodologies and US-based clients",
     ],
-    img: "vairix.jpg",
+    img: VairixImg,
     width: "36",
     url: "http://www.vairix.com/",
   },
@@ -25,7 +28,7 @@ const tabs = [
       "Contributed and maintain code for e-commerce websites primarily using Backbone, Sass and jQuery",
       "Worked with Netsuite plataform creating Suitescripts",
     ],
-    img: "brokenrubik.jpeg",
+    img: BrokenRubikImg,
     width: "36",
     url: "https://brokenrubik.co/",
   },
@@ -37,7 +40,7 @@ const tabs = [
       "Developed a Node backend using Koa, Typescript and Couchbase",
       "Worked on a video conference app mostly using Vue and WebRTC",
     ],
-    img: "integraccs.svg",
+    img: IntegraCCSImg,
     width: "55",
     url: "https://www.integraccs.com/",
   },
@@ -62,7 +65,7 @@ const tabs = [
               aria-controls="profile"
               aria-selected="false"
             >
-              <img :src="'../src/assets/images/' + img" :alt="name" :width="width" class="mr-3 rounded" />
+              <img :src="img" :alt="name" :width="width" class="mr-3 rounded" />
               <span>
                 {{ name }}
               </span>
