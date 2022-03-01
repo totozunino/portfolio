@@ -2,7 +2,7 @@
   <button
     type="button"
     @click="toggleDarkMode"
-    class="w-12 h-12 rounded shadow-lg bg-secondary-dark dark:bg-primary shadow-primary/25"
+    class="w-12 h-12 rounded shadow-lg bg-slate-900 dark:bg-primary dark:shadow-primary/25"
   >
     {{ isDarkMode ? "🌙" : "☀️" }}
   </button>

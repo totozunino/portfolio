@@ -12,6 +12,9 @@ module.exports = {
       backgroundImage: {
         avatar: "url('@/assets/images/avatar.jpg')",
       },
+      listStyleType: {
+        square: "square",
+      },
     },
   },
   plugins: [],
