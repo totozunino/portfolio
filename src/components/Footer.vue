@@ -10,7 +10,7 @@ const goToSection = (section: string) => {
 };
 </script>
 <template>
-  <div class="grid w-full text-white place-items-center h-80 pa-6 bg-[#212121]">
+  <footer class="grid w-full text-white place-items-center h-80 pa-6 bg-[#212121]">
     <div class="my-2 text-center">
       <p class="mb-2 text-xl text-center">Navigate</p>
       <RouterLink :to="{ hash: '#home' }" @click="goToSection('home')" class="px-4">Home</RouterLink>
@@ -28,7 +28,7 @@ const goToSection = (section: string) => {
     <p class="pt-4 mb-1">Designed by @totoz - {{ new Date().getFullYear() }}</p>
     <p style="opacity: 0.6" class="mb-0">Made with</p>
     <img src="@/assets/images/vue-logo.png" alt="Vue Logo" width="42" />
-  </div>
+  </footer>
 </template>
 
 <style scoped>

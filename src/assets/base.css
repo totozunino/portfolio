@@ -23,6 +23,7 @@
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
   color: var(--color-text);
   @apply dark:bg-secondary-dark dark:text-slate-200;
   font-family: Nunito, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
