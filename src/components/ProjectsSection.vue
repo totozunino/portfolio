@@ -100,6 +100,7 @@ const projects = [
     imgClasses: "border-none shadow-none max-h-[242px]",
     source: "https://github.com/Only-Coders/mobile",
     url: "",
+    disableOverlay: true,
   },
   {
     title: "Avatar Maker",

@@ -19,10 +19,12 @@ interface ProjectItemProps {
   source: string;
   url: string;
   imgClasses: string;
+  disableOverlay: boolean;
 }
 
 const props = withDefaults(defineProps<ProjectItemProps>(), {
   ltr: true,
+  disableOverlay: false,
   imgClasses: "",
 });
 
@@ -58,7 +60,7 @@ useIntersectionObserver(target, ([{ isIntersecting }], obvserver) => {
           <div
             v-show="showImageOverlay"
             class="absolute top-0 left-0 flex items-center justify-center w-full h-full space-y-4"
-            :class="imgClasses ? '' : 'bg-black/40'"
+            :class="disableOverlay ? '' : 'bg-black/40'"
           >
             <a v-if="props.url" :href="props.url" target="_blank" class="absolute top-2 right-2">
               <svg
