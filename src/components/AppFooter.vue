@@ -19,9 +19,15 @@ const goToSection = (section: string) => {
       <RouterLink :to="{ hash: '#contact' }" @click="goToSection('contact')" class="px-4">Contact</RouterLink>
       <p class="mt-4 mb-0 text-xl text-center">Social</p>
       <div class="flex justify-center mt-2 space-x-4">
-        <IconGithub />
-        <IconGitlab />
-        <IconLinkedin />
+        <a href="https://www.linkedin.com/in/mathias-zunino-5531021a3/" target="_blank">
+          <IconLinkedin />
+        </a>
+        <a href="https://gitlab.com/totoz" target="_blank">
+          <IconGitlab />
+        </a>
+        <a href="https://github.com/totozunino" target="_blank">
+          <IconGithub />
+        </a>
       </div>
     </div>
     <hr class="w-full" />

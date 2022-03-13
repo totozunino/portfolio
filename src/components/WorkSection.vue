@@ -16,7 +16,7 @@ const tabs = [
     ],
     img: VairixImg,
     width: "36",
-    url: "http://www.vairix.com/",
+    url: "https://www.vairix.com/",
   },
   {
     name: "Broken Rubik",
@@ -82,7 +82,7 @@ const tabs = [
           v-show="selectedTab === index"
         >
           <p class="text-lg">
-            Software developer at
+            Software developer
             <a :href="tabs[selectedTab].url" class="font-bold text-primary" target="_blank" rel="nofollow"
               >@{{ tabs[selectedTab].name }}</a
             >

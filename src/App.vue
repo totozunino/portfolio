@@ -3,7 +3,7 @@ import { RouterView } from "vue-router";
 import { ref, watch } from "vue";
 import AppHeader from "@/components/AppHeader.vue";
 import AnimatedBackground from "@/components/AnimatedBackground.vue";
-import Footer from "@/components/Footer.vue";
+import AppFooter from "@/components/AppFooter.vue";
 import HamburgerButton from "@/components/HamburgerButton.vue";
 import NavigationDrawer from "./components/NavigationDrawer.vue";
 
@@ -29,7 +29,7 @@ watch(showDrawer, (showDrawer) => {
   <transition name="slide-fade">
     <NavigationDrawer v-if="showDrawer" @toggle="() => (showDrawer = !showDrawer)" />
   </transition>
-  <Footer />
+  <AppFooter />
 </template>
 
 <style>
