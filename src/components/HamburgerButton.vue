@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { defineProps, defineEmits } from "vue";
-
 const props = defineProps<{ showDrawer: boolean }>();
 const emit = defineEmits<{
   (e: "toggle"): void;

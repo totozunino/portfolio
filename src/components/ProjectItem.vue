@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useIntersectionObserver } from "@vueuse/core";
-import { ref, withDefaults, defineProps } from "vue";
+import { ref } from "vue";
 import IconGithub from "@/components/icons/IconGithub.vue";
 
 interface Technology {
