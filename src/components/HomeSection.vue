@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import { RouterLink } from "vue-router";
 
-const technologies = ["React", "Node", "Vue", "Flutter", "Javascript (ES6+)", "HTML & (S)CSS"];
+const technologies = ["Node", "Vue", "React", "Flutter", "Javascript (ES6+)", "HTML & (S)CSS"];
 const showMoreContent = ref(false);
 
 const afterEnter = () => (showMoreContent.value = true);
@@ -38,7 +38,7 @@ const goToSection = (section: string) => {
     <Transition name="bounce" appear>
       <div v-show="showMoreContent" class="flex flex-col items-center">
         <div
-          class="box-content w-48 h-48 mt-10 bg-center bg-no-repeat bg-cover border-2 rounded-full shadow-lg dark:shadow-primary/25 bg-avatar"
+          class="box-content w-48 h-48 mt-10 bg-top bg-no-repeat bg-cover border-2 rounded-full shadow-lg dark:shadow-primary/25 bg-avatar"
         />
         <hr class="hidden w-full max-w-sm my-5 sm:max-w-xl sm:flex" />
         <div class="flex-wrap items-center hidden mt-5 space-x-4 sm:flex">

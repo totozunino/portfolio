@@ -3,6 +3,7 @@ import { ref } from "vue";
 import VairixImg from "@/assets/images/vairix.jpg";
 import BrokenRubikImg from "@/assets/images/brokenrubik.jpeg";
 import IntegraCCSImg from "@/assets/images/integraccs.svg";
+import FreelanceImg from "@/assets/images/freelance.png";
 
 const selectedTab = ref(0);
 const tabs = [
@@ -10,13 +11,22 @@ const tabs = [
     name: "Vairix",
     date: "Jul 2021 - Actual",
     description: [
-      "Working on a search engine app mostly using Next.js, Typescript, Tailwindcss and Cypress",
+      "Working for a US based company with large amount data and an big microservices architecture using Nest.js, Typescript, GraphQL, PostgreSQL, Redis, RabbitMQ, Docker, AWS and Kubernetes",
+      "MVP for a Politician game with an microservices architecture using Nest.js, Typescript, MongoDB, PostgreSQL, Redis, RabbitMQ, Docker and AWS",
+      "Worked on a search engine app mostly using Next.js, Typescript, Tailwindcss and Cypress",
       "Built a React component library using Typescript, Tailwindcss, Storybook, Testing library and Github packages",
       "Working with agile methodologies and US-based clients",
     ],
     img: VairixImg,
     width: "36",
     url: "https://www.vairix.com/",
+  },
+  {
+    name: "Freelance",
+    date: "Jan 2023 - Actual",
+    description: ["Working on multiple web games mostly using Vue.js, Typescript, SASS and Storybook"],
+    img: FreelanceImg,
+    width: "36",
   },
   {
     name: "Broken Rubik",
