@@ -44,28 +44,28 @@ const goToSection = (section: string) => {
         <div class="flex-wrap items-center hidden mt-5 space-x-4 sm:flex">
           <RouterLink
             to="/"
-            active-class="active"
+            :class="{ active: !$route.hash }"
             @click="goToSection('home')"
             class="px-4 py-2 uppercase transition-colors duration-200 rounded hover:bg-primary/20 hover:text-primary"
             >Home</RouterLink
           >
           <RouterLink
             :to="{ hash: '#work' }"
-            active-class="active"
+            :class="{ active: $route.hash === '#work' }"
             @click="goToSection('work')"
             class="px-4 py-2 uppercase transition-colors duration-200 rounded hover:bg-primary/20 hover:text-primary"
             >Work</RouterLink
           >
           <RouterLink
             :to="{ hash: '#projects' }"
-            active-class="active"
+            :class="{ active: $route.hash === '#projects' }"
             @click="goToSection('projects')"
             class="px-4 py-2 uppercase transition-colors duration-200 rounded hover:bg-primary/20 hover:text-primary"
             >Projects</RouterLink
           >
           <RouterLink
             :to="{ hash: '#contact' }"
-            active-class="active"
+            :class="{ active: $route.hash === '#contact' }"
             @click="goToSection('contact')"
             class="px-4 py-2 uppercase transition-colors duration-200 rounded hover:bg-primary/20 hover:text-primary"
             >Contact</RouterLink
