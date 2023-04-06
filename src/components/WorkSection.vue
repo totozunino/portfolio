@@ -10,12 +10,34 @@ const tabs = [
   {
     name: "Vairix",
     date: "Jul 2021 - Actual",
-    description: [
-      "Working for a US based company with large amount data and an big microservices architecture using Nest.js, Typescript, GraphQL, PostgreSQL, Redis, RabbitMQ, Docker, AWS and Kubernetes",
-      "MVP for a Politician game with an microservices architecture using Nest.js, Typescript, MongoDB, PostgreSQL, Redis, RabbitMQ, Docker and AWS",
-      "Worked on a search engine app mostly using Next.js, Typescript, Tailwindcss and Cypress",
-      "Built a React component library using Typescript, Tailwindcss, Storybook, Testing library and Github packages",
-      "Working with agile methodologies and US-based clients",
+    description: [],
+    projects: [
+      {
+        name: "Stuzo",
+        tasks: [
+          "Involved in the development and implementation of software solutions for clients in the digital commerce industry",
+          "Designed, coded, tested, and maintained software applications, and collaborated with cross-functional teams to meet client and end-user needs",
+          "Worked with microservices architecture, large data sets and user pools using Nest.js, Typescript, Graphql, K8s, RabbitMQ, and AWS",
+        ],
+      },
+      {
+        name: "Political IQ",
+        tasks: [
+          "Implemented ETL processes using Nest.js, Typescript, MongoDB, PostgreSQL, RabbitMQ, AWS and Docker",
+          "Involved in the development of backend APIs using Nest.js, Typescript, PostgreSQL, Redis",
+          "Design of the frontend structure using React, Typescript, Redux, Redux toolkit, TailwindCSS and Storybook",
+        ],
+      },
+      {
+        name: "Seekr",
+        tasks: [
+          "Developed an search engine app mostly using Next.js, Typescript, TailwindCSS and Cypress",
+          "Created a React component library using Typescript, TailwindCSS, Storybook, Testing library and Github Packages",
+        ],
+      },
+
+      // "Working for a US based company with large amount data and an big microservices architecture using Nest.js, Typescript, GraphQL, PostgreSQL, Redis, RabbitMQ, Docker, AWS and Kubernetes",
+      // "Developed from start to finish an MVP for a politician game with an microservices architecture using Nest.js, Typescript, MongoDB, PostgreSQL, Redis, RabbitMQ, Docker and AWS",
     ],
     img: VairixImg,
     width: "36",
@@ -24,7 +46,7 @@ const tabs = [
   {
     name: "Freelance",
     date: "Jan 2023 - Actual",
-    description: ["Working on multiple web games mostly using Vue.js, Typescript, SASS and Storybook"],
+    description: ["Working on the design and develop of multiple web games using Vue, Typescript, SASS and Storybook"],
     img: FreelanceImg,
     width: "36",
   },
@@ -32,11 +54,11 @@ const tabs = [
     name: "Broken Rubik",
     date: "Apr 2020 - Feb 2021",
     description: [
-      "Worked on the website using Gridsome and TailwindCSS",
-      "Built an shopify app for a shipment company using Vue in the frontend and Koa, PostgreSQL in the Backend",
+      "Worked on an website using Gridsome, Typescript and TailwindCSS",
+      "Built from scratch the backend and frontend for an Shopify app using Vue, Typescript, Koa, Heroku and PostgreSQL",
       "Developed a Node app using Fastify, Typescript and Algolia",
-      "Contributed and maintain code for e-commerce websites primarily using Backbone, Sass and jQuery",
-      "Worked with Netsuite plataform creating Suitescripts",
+      "Contributed and maintain code for e-commerce websites primarily using Javascript, Sass and jQuery",
+      "Worked with NetSuite platform creating SuiteScripts",
     ],
     img: BrokenRubikImg,
     width: "36",
@@ -48,7 +70,7 @@ const tabs = [
     description: [
       "Built a call centers management app using Vue, Vuex, Vuetify and Typescript",
       "Developed a Node backend using Koa, Typescript and Couchbase",
-      "Worked on a video conference app mostly using Vue and WebRTC",
+      "Worked on a video conference web app using Vue, Typescript and WebRTC",
     ],
     img: IntegraCCSImg,
     width: "55",
@@ -92,7 +114,7 @@ const tabs = [
           v-show="selectedTab === index"
         >
           <p class="text-lg">
-            Software developer
+            Software Engineer
             <a :href="tabs[selectedTab].url" class="font-bold text-primary" target="_blank" rel="nofollow"
               >@{{ tabs[selectedTab].name }}</a
             >
@@ -101,6 +123,17 @@ const tabs = [
           <ul class="pt-4 pl-4 list-square marker:text-primary">
             <li v-for="description in tabs[selectedTab].description" :key="description">
               {{ description }}
+            </li>
+          </ul>
+          <ul class="pl-4 list-square marker:text-primary">
+            <li v-for="project in tabs[selectedTab].projects" :key="project.name" class="py-2">
+              {{ project.name }}
+
+              <ul class="pl-4 list-circle marker:text-primary">
+                <li v-for="task in project.tasks" :key="task">
+                  {{ task }}
+                </li>
+              </ul>
             </li>
           </ul>
         </div>

@@ -14,6 +14,7 @@ module.exports = {
       },
       listStyleType: {
         square: "square",
+        circle: "circle",
       },
     },
   },

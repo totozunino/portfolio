@@ -98,7 +98,7 @@ const projects = [
     ltr: false,
     img: OnlyCodersImg,
     imgClasses: "border-none shadow-none max-h-[242px]",
-    source: "https://github.com/Only-Coders/mobile",
+    source: "",
     url: "",
     disableOverlay: true,
   },

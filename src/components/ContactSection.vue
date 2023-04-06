@@ -102,7 +102,7 @@ const handleSubmit = async () => {
         <button
           type="submit"
           :disabled="isLoading"
-          class="px-10 py-2 mx-auto mt-4 text-white rounded shadow-xl bg-gradient-to-r from-primary/70 to-primary/90 shadow-primary/25"
+          class="px-10 py-2 mx-auto mt-4 text-white transition-transform scale-100 rounded shadow-xl bg-gradient-to-r from-primary/70 to-primary/90 shadow-primary/25 hover:scale-110"
         >
           {{ isLoading ? "Sending..." : "Submit" }}
         </button>
